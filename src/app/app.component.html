@@ -1,1 +1,11 @@
-<router-outlet />
+<router-outlet>
+    <!-- app.component.html -->
+<div class="topnav" [ngClass]="{'responsive': isResponsive}">
+    <a [routerLink]="['home']" routerLinkActive="active">Home</a>
+    <a routerLink="/news" routerLinkActive="active">News</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/about" routerLinkActive="active">About</a>
+    <a href="javascript:void(0);" style="font-size: 15px;" class="icon" (click)="toggleMenu()">&#9776;</a>
+</div>
+
+</router-outlet>
